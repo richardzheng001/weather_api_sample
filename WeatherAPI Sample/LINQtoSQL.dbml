@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="weatherforecast" Class="LINQtoSQLDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\weatherforecast.mdf;Integrated Security=True" SettingsObjectName="WeatherAPI_Sample.Properties.Settings" SettingsPropertyName="weatherforecastConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.astronomy" Member="astronomies">
+    <Type Name="astronomy">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="sunrise" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="sunset" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="weather_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="weather_astronomy" Member="weather" ThisKey="weather_id" OtherKey="id" Type="weather" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.atmosphere" Member="atmospheres">
+    <Type Name="atmosphere">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="humidity" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="pressure" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="visibility" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="weather_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="weather_atmosphere" Member="weather" ThisKey="weather_id" OtherKey="id" Type="weather" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.condition" Member="conditions">
+    <Type Name="condition">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="cloudiness" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="cloudiness_name" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="precipitation" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="precipitation_mode" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="weather_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="weather_condition" Member="weather" ThisKey="weather_id" OtherKey="id" Type="weather" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.coord" Member="coords">
+    <Type Name="coord">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="latitude" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="longitude" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="location_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="location_coord" Member="location" ThisKey="location_id" OtherKey="id" Type="location" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.country_code" Member="country_codes">
+    <Type Name="country_code">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="country" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="iso" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="un" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="un_num" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="dialing_code" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.europe_capitals" Member="europe_capitals">
+    <Type Name="europe_capital">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="country" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="capital" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.location" Member="locations">
+    <Type Name="location">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="city" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="country" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Association Name="location_coord" Member="coords" ThisKey="id" OtherKey="location_id" Type="coord" />
+      <Association Name="location_weather" Member="weathers" ThisKey="id" OtherKey="location_id" Type="weather" />
+    </Type>
+  </Table>
+  <Table Name="dbo.temperature" Member="temperatures">
+    <Type Name="temperature">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="value" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="min" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="max" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="unit" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="weather_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="weather_temperature" Member="weather" ThisKey="weather_id" OtherKey="id" Type="weather" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.weather" Member="weathers">
+    <Type Name="weather">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="code" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="description" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="icon" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="last_updated" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="location_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="weather_astronomy" Member="astronomies" ThisKey="id" OtherKey="weather_id" Type="astronomy" />
+      <Association Name="weather_atmosphere" Member="atmospheres" ThisKey="id" OtherKey="weather_id" Type="atmosphere" />
+      <Association Name="weather_condition" Member="conditions" ThisKey="id" OtherKey="weather_id" Type="condition" />
+      <Association Name="weather_temperature" Member="temperatures" ThisKey="id" OtherKey="weather_id" Type="temperature" />
+      <Association Name="weather_wind" Member="winds" ThisKey="id" OtherKey="weather_id" Type="wind" />
+      <Association Name="location_weather" Member="location" ThisKey="location_id" OtherKey="id" Type="location" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.wind" Member="winds">
+    <Type Name="wind">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="direction" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="direction_code" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="direction_name" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="description" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="speed" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="weather_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="weather_wind" Member="weather" ThisKey="weather_id" OtherKey="id" Type="weather" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

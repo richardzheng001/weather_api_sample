@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 16.5" name="LINQtoSQL">
+  <DataContextMoniker Name="/LINQtoSQLDataContext" />
+  <nestedChildShapes>
+    <classShape Id="3029d9ce-5c63-4c43-bc2f-62e7a0c10f6f" absoluteBounds="6.25, 3.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/LINQtoSQLDataContext/astronomy" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ae1a59c4-98f7-4748-835d-c12fd73c2b08" absoluteBounds="6.265, 4.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b3c8457e-4334-4cc4-95f0-cc274a27d238" absoluteBounds="6.25, 6.25, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/LINQtoSQLDataContext/atmosphere" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0c46c28c-91fb-440c-ba98-9c33b33d32e5" absoluteBounds="6.265, 6.71, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="95e373df-4c78-4aa3-a40a-2668fc3e76d3" absoluteBounds="6.25, 8.75, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/LINQtoSQLDataContext/condition" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5bb81b5a-7044-4618-82f4-97097521c99e" absoluteBounds="6.265, 9.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bf15c7c7-3d19-47cc-a14b-a01cfcda1383" absoluteBounds="3.5, 1.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/LINQtoSQLDataContext/coord" />
+      <nestedChildShapes>
+        <elementListCompartment Id="17cf1feb-b220-4dfd-b1c0-d8d426f58f73" absoluteBounds="3.515, 2.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c673e754-0a48-4591-a832-e53c51d8290a" absoluteBounds="0.75, 4.75, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/LINQtoSQLDataContext/country_code" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1ddf9fdc-fcdd-4785-9692-0c04fcec8d6a" absoluteBounds="0.765, 5.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e37e1e8f-3315-462a-a2df-2d0a5265bff0" absoluteBounds="6.75, 0.75, 2, 1.3862939453125003">
+      <DataClassMoniker Name="/LINQtoSQLDataContext/europe_capital" />
+      <nestedChildShapes>
+        <elementListCompartment Id="79b3bc8f-043e-449b-a8c8-b260d7dc5090" absoluteBounds="6.765, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ab63411b-b7fd-4502-a85d-788bf7fa63b2" absoluteBounds="0.75, 8.25, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/LINQtoSQLDataContext/location" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1136a479-5fff-40e8-aef7-f7a553514bf5" absoluteBounds="0.765, 8.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4c3b7544-53db-48ec-9b4d-3a6cb8c06910" absoluteBounds="6.25, 11.5, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/LINQtoSQLDataContext/temperature" />
+      <nestedChildShapes>
+        <elementListCompartment Id="761fb694-9a58-4229-97a9-aaf767d1d22b" absoluteBounds="6.265, 11.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="50a01fe5-dda4-43a5-8a6f-0d0727786f65" absoluteBounds="3.5, 9.125, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/LINQtoSQLDataContext/weather" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e561f55e-1949-48df-8a82-a67a679ff15c" absoluteBounds="3.515, 9.585, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="744aa893-d007-49c6-b015-40f104915849" absoluteBounds="6.25, 14.125, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/LINQtoSQLDataContext/wind" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0740a5fe-c359-4d7a-8a71-b6f265f5e3f8" absoluteBounds="6.265, 14.585, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 8.25); (3.125 : 7.875); (3.125 : 2.41429768880208); (3.5 : 2.41429768880208)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LINQtoSQLDataContext/location/location_coord" />
+      <nodes>
+        <classShapeMoniker Id="ab63411b-b7fd-4502-a85d-788bf7fa63b2" />
+        <classShapeMoniker Id="bf15c7c7-3d19-47cc-a14b-a01cfcda1383" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5 : 9.125); (4.5 : 4.66429768880208); (6.25 : 4.66429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LINQtoSQLDataContext/weather/weather_astronomy" />
+      <nodes>
+        <classShapeMoniker Id="50a01fe5-dda4-43a5-8a6f-0d0727786f65" />
+        <classShapeMoniker Id="3029d9ce-5c63-4c43-bc2f-62e7a0c10f6f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.0312525 : 9.125); (5.0312525 : 7.13544840494792); (6.25 : 7.13544840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LINQtoSQLDataContext/weather/weather_atmosphere" />
+      <nodes>
+        <classShapeMoniker Id="50a01fe5-dda4-43a5-8a6f-0d0727786f65" />
+        <classShapeMoniker Id="b3c8457e-4334-4cc4-95f0-cc274a27d238" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 9.91909912109375); (6.25 : 9.91909912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LINQtoSQLDataContext/weather/weather_condition" />
+      <nodes>
+        <classShapeMoniker Id="50a01fe5-dda4-43a5-8a6f-0d0727786f65" />
+        <classShapeMoniker Id="95e373df-4c78-4aa3-a40a-2668fc3e76d3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5 : 11.0881982421875); (4.5 : 12.4815991210937); (4.94791916666667 : 12.4815991210937 : JumpStart); (5.11458583333333 : 12.4815991210937 : JumpEnd); (6.25 : 12.4815991210937)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LINQtoSQLDataContext/weather/weather_temperature" />
+      <nodes>
+        <classShapeMoniker Id="50a01fe5-dda4-43a5-8a6f-0d0727786f65" />
+        <classShapeMoniker Id="4c3b7544-53db-48ec-9b4d-3a6cb8c06910" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 9.38064697265625); (3.5 : 9.38064697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LINQtoSQLDataContext/location/location_weather" />
+      <nodes>
+        <classShapeMoniker Id="ab63411b-b7fd-4502-a85d-788bf7fa63b2" />
+        <classShapeMoniker Id="50a01fe5-dda4-43a5-8a6f-0d0727786f65" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.0312525 : 11.0881982421875); (5.0312525 : 15.2027498372396); (6.25 : 15.2027498372396)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LINQtoSQLDataContext/weather/weather_wind" />
+      <nodes>
+        <classShapeMoniker Id="50a01fe5-dda4-43a5-8a6f-0d0727786f65" />
+        <classShapeMoniker Id="744aa893-d007-49c6-b015-40f104915849" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
